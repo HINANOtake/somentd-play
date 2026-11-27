@@ -1,7 +1,7 @@
 // オフライン用。ページは通信を先に試し（新しい版をすぐ届ける）、つながらないときは保存したものを出す。
 // JS（名前に版の印が付いている）とアイコンは、保存したものを先に使う。
 // 次の行は scripts/publish-play.sh が公開のたびに書き換える（版を変えると古い保存を捨てる）。
-var CACHE = 'somentd-202611271832-7f6d2e3';
+var CACHE = 'somentd-202611271839-16c623d';
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) {
     return c.addAll(['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png']);
